@@ -1,0 +1,5 @@
+in the fall: "tefal"
+rubbish password: "Pass123@"
+^(cases|he is|sees)$: "css"
+each mill|eh dear mel|heed mill|ah mo|a tall|admin|each demon: "html"
+(never all)|(of all): "null"

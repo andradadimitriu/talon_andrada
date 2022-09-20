@@ -1,0 +1,8 @@
+^my name$: "Andrada Dimitriu"
+^my name me$: "Andrada"
+^my first name$: "Andrada"
+^my last name$: "Dimitriu"
+^my email$: "andrada.dimitriu@gmail.com"
+^my second email$: "andradaradarada@gmail.com"
+^sign doc$: "\tde Andrada Dimitriu"
+^phone number$: "0787672668"
