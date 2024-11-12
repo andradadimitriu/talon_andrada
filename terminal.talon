@@ -18,3 +18,21 @@ app.name: Terminal
     insert(user.formatted_text(text, 'DASH_SEPARATED'))
 ^make dear$:
     insert("mkdir ")
+^youngest$: "yarn test\n"
+^git checkout$": "git checkout"
+^history <user.text>$:
+    key(ctrl-r)
+    insert("{text}")
+^history$:
+    key(ctrl-r)
+^cancel$:
+    key(ctrl-c)
+list: "ls -ltr"
+ 
+^(him|visual insert) <user.text>$:
+    insert("vim ")
+    insert(text)
+^save it$:
+    key(esc)
+    insert(":wq")
+    key(enter)

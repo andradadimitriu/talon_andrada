@@ -5,11 +5,11 @@
 # open new google doc
 #qFall
 # open community
-#
+#10<div>
 
 import time
-from user.knausj_talon.code.switcher import Actions
-from user.knausj_talon.code.platforms.mac.app import AppActions
+from user.knausj_talon.core.app_switcher.app_switcher import Actions
+from user.knausj_talon.core.windows_and_tabs.windows_and_tabs_mac import AppActions
 from talon import Module, ctrl, actions, ui, Context, app
 from user.knausj_talon.apps.chrome.chrome import browser_actions
 from urllib.parse import quote_plus
@@ -17,7 +17,7 @@ import webbrowser
 mod = Module()
 ctx = Context()
 
-mod.list('websites_additional', desc='Opening website')
+mod.list('websites_additional', desc='Opening website') 
 ctx.lists['user.websites_additional'] = {
     'local': 'http://localhost:3000/',
     'death': 'https://dev.d3h0zdrehj8er4.amplifyapp.com/biletzele',
@@ -35,6 +35,7 @@ ctx.lists['user.websites_additional'] = {
     'get hub': 'https://github.com',
     'reddit': 'https://reddit.com',
     'talon docs': 'https://talonvoice.com/docs/index.html',
+    'talon chit': 'https://talon-knausj-cheatsheet.netlify.app/',
     'talon cheat': 'https://talon-knausj-cheatsheet.netlify.app/',
     #'youtube': 'https://www.youtube.com/',
     'issues': 'https://github.com/knausj85/knausj_talon',
@@ -76,6 +77,12 @@ ctx.lists['user.websites_additional'] = {
     'react practice': 'https://reactjs.org/docs/context.html',
     'react dogs': 'https://reactjs.org/docs/context.html',
     'learn react': 'https://reactjs.org/docs/context.html',
+    'me board': 'https://dunelmmcdev.atlassian.net/jira/software/projects/CREO/boards/226?assignee=6368d7f796243ac755edb6d7',
+    'board': 'https://dunelmmcdev.atlassian.net/jira/software/projects/CREO/boards/226',
+    'you dome': 'https://mindera.udemy.com/organization/home/',
+    'ups': 'https://myapplications.microsoft.com/',
+    'you tills': 'https://gitlab.com/dunelm/product/backend-services/tcb-utils'
+
     #'?????': 'https://??????.com',
 }
 

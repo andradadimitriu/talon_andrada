@@ -19,11 +19,16 @@ go go: key(cmd-alt-r)
 rerun test: key(cmd-r)
 pushy: key(cmd-shift-k)
 show (this| if|dif): key(cmd-d)
-next (if| dif): key(cmd-;)
-last (if|dif): key(cmd-shift-;)
+next (if|dif): user.idea("action NextDiff")
+last (if|dif): user.idea("action PreviousDiff")
 next file (if|dif): key(cmd-shift-])
 last file (if| dif): key(cmd-shift-[)
 true: "true"
 false: "false"
 (rewrite|place|replace) next <user.text> [over]: user.idea("find next {user.formatted_text(text, 'PRIVATE_CAMEL_CASE')},action EditorPaste")
 (rewrite|place|replace) last <user.text> [over]: user.idea("find prev {user.formatted_text(text, 'PRIVATE_CAMEL_CASE')},action EditorPaste")
+recent:
+    key(cmd-e)
+(stash|shelf) changes: user.idea("action ChangesView.Shelve")
+show (stash|shelf): user.idea("action Vcs.Show.Shelf")
+(get | git) checkout: "git checkout"
